@@ -1,11 +1,11 @@
 // --створити масив з:
 // - з 5 числових значень 
-    let number = [1, 5, 6, 8, 45];
+    // let number = [1, 5, 6, 8, 45];
 // // - з 5 стічкових значень
-    let string = ["akt", "git", "php", 'js', "html"];
+    // let string = ["akt", "git", "php", 'js', "html"];
 // // - з 5 значень стрічкового, числового та 
 // // булевого типу
-    let StringNumBool = ["React" ,"Angular", "NextJS", 1, 5, 6, 8, 45, false,true ]
+    let StringNumBool = ["React" ,"Angular", "NextJS", 1, 45, false,true, {admin:"Volan"}, ["addaas"]]
 // // - та вивести його в консоль
 // console.log(number);
 // console.log(string);
@@ -48,13 +48,36 @@
     // }
 
 // - Створити масив з 10 строкрових елементів. Вивести в консоль всі його елементи в циклі.
-    let TenString = []
+    // let TenString = ["akt", "git", "php", 'js', "html","dOBBI", "react", "Angular"];
+    // for (let i =0; i < 10; i++){
+    //     console.log(TenString[i]);
+    // }
 // - Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
+    // for (let i = 0; i < StringNumBool.length; i++) {
+    //     console.log(StringNumBool[i]);
+        
+    // }
 // - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
+    // for (let i = 0; i < StringNumBool.length; i++) {
+    //     if (typeof(StringNumBool[i]) === "boolean")  {
+    //         console.log(StringNumBool[i]);
+    //     }
+        
+    // }
+        // console.log(typeof (true)); typeof виводить тип в String
 // - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи
+// for (let i = 0; i < StringNumBool.length; i++) {
+//     if (typeof(StringNumBool[i]) === "number")  {
+//         console.log(StringNumBool[i]);
+//     }
+    
+// }
 // - Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи
-
+    for (let i = 0; i < StringNumBool.length; i++) {
+        if (typeof(StringNumBool[i]) == "string") console.log(StringNumBool[i])
+    };
 // - Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.
+    
 // - Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
 // - Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
 // - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
