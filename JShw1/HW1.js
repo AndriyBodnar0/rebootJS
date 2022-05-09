@@ -185,8 +185,9 @@
     // console.log(NumArr.splice(0, 2));
 // - Дан масив [1, 2, 3, 4, 5]. Зробіть з нього масив [1, 2, 3, 'a', 'b', 'c', 4, 5].
 //     Підказка. Необхідно стерти елементи, зберегти їх кудись. Дописати букви і після букв повернути стерті цифри
-    let TestArr = [1, 2, 3, 4, 5];
-    let NewTestArr =[];
+ // Потім дописати
+    // let TestArr = [1, 2, 3, 4, 5];
+    // let NewTestArr =[];
 // - Дан масив [1, 2, 3, 4, 5]. Зробіть з нього масив [1, 'a', 'b', 2, 3, 4, 'c', 5, 'e'].
 //     Підказка. Працюйте по принципу задачі вище.
 // - Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.
@@ -197,26 +198,90 @@
 // ============
 
 // зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та:
+// let NewTestar = [2,17,13,6,22,31,45,66,100,-18];
+
 // 1. перебрати його циклом while
+    // let i = 0;
+    // while (i < NewTestar.length) {
+    //     console.log(NewTestar[i]);
+    //     i++;
+    // }
+   
 // 2. перебрати його циклом for
+    // for (let i = 0; i < NewTestar.length; i++){
+    //      console.log(NewTestar[i]);
+    // };
+
 // 3. перебрати циклом while та вивести  числа тільки з непарним індексом
+    //  let i = 0;
+    //  while (i < NewTestar.length) {
+    //      if (i % 2 !== 0){console.log(NewTestar[i])};
+    //   i++   
+    //  }
+    // console.log("------------------------------------");
 // 4. перебрати циклом for та вивести  числа тільки з непарним індексом
+    // for (let i = 0; i < NewTestar.length; i++){
+    //     if(i % 2 !== 0){console.log(NewTestar[i]);}
+    // };
+
 // 5. перебрати циклом while та вивести  числа тільки парні  значення
+        // let i = 0;
+        // while (i < NewTestar.length) {
+        //         if(NewTestar[i] % 2 == 0)console.log(NewTestar[i]);;
+        //     i++;
+        // }
 // 6. перебрати циклом for та вивести  числа тільки парні  значення
+    // for (let i = 0; i < NewTestar.length; i++) {
+    //         if (NewTestar[i] % 2 == 0)console.log(NewTestar[i]);
+        
+    // };
 // 7. замінити кожне число кратне 3 на слово "okten"
+    //  for (let i = 0; i < NewTestar.length; i++) {
+    //      if(NewTestar[i] % 3 === 0 ) NewTestar[i] = 'okten';
+    //      console.log(NewTestar[i]);
+        
+    //  };
 // 8. вивести масив в зворотньому порядку.
+    // for (let i = NewTestar.length - 1; i >= 0; i--) { 
+    //     console.log(NewTestar[i]);
+        
+    // }
 // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
-// 10
+// 10.
 //  створити пустий масив та :
 // - заповнити його 50 парними числами за допомоги циклу.
 // - заповнити його 50 непарними числами за допомоги циклу.
+    // let TestFifthy = [];
+    // let TestFifthy1 = [];
+    // for (let i = 0; i < 100; i++) {
+    //     if ( i % 2 === 0)TestFifthy.push(i);
+    //     if ( i % 2 !== 0)TestFifthy1.push(i);
+        
+        
+    // };
+    // console.log(TestFifthy);
+
+    // console.log(TestFifthy1);
+
 
 
 // 1. Створити пустий масив та :
 //        a. заповнити його 50 парними числами за допомоги циклу.
 //        b. заповнити його 50 непарними числами за допомоги циклу.
 //        c. Заповнити масив 20ма рандомними числами. (Google: Generate random number JS)
+    // let Testarray = [];
+    // for (let i = 0; i < 20; i++) {
+    //      Testarray.push(Math.floor(Math.random() * 100));
+        
+    // }
+    // console.log(Testarray);
 //        d. Заповнити масив 20ма рандомними чисалами в діапазоні від 8 до 732 (Google: Generate random number JS)
+    let Testarray = [];
+    for (let i = 0; i < 20; i++) {
+         Testarray.push(Math.floor(Math.random() * (732 - 8) ) + 8);
+        
+    }
+    console.log(Testarray);
 //  2. Вивести за допомогою console.log кожен третій елемен
 //  3. Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним.
 //  4. Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним та записати їх в новий масив
