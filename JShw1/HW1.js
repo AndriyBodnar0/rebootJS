@@ -276,13 +276,20 @@
     // }
     // console.log(Testarray);
 //        d. Заповнити масив 20ма рандомними чисалами в діапазоні від 8 до 732 (Google: Generate random number JS)
-    let Testarray = [];
-    for (let i = 0; i < 20; i++) {
-         Testarray.push(Math.floor(Math.random() * (732 - 8) ) + 8);
+    // let Testarray = [];
+    // for (let i = 0; i < 20; i++) {
+    //      Testarray.push(Math.floor(Math.random() * (732 - 8) ) + 8);
         
-    }
-    console.log(Testarray);
+    // }
+    // console.log(Testarray);
 //  2. Вивести за допомогою console.log кожен третій елемен
+ 
+     for (let i = 0; i < 100; i+=3) {
+         
+         console.log(i);
+     }
+     
+     
 //  3. Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним.
 //  4. Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним та записати їх в новий масив
 //  5. Вивести кожен елемент масиву, сусід справа якого є парним
