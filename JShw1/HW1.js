@@ -5,7 +5,7 @@
     // let string = ["akt", "git", "php", 'js', "html"];
 // // - з 5 значень стрічкового, числового та 
 // // булевого типу
-    let StringNumBool = ["React" ,"Angular", "NextJS", 1, 45, false,true, {admin:"Volan"}, ["addaas"]]
+    // let StringNumBool = ["React" ,"Angular", "NextJS", 1, 45, false,true, {admin:"Volan"}, ["addaas"]]
 // // - та вивести його в консоль
 // console.log(number);
 // console.log(string);
@@ -283,14 +283,18 @@
     // }
     // console.log(Testarray);
 //  2. Вивести за допомогою console.log кожен третій елемен
- 
-     for (let i = 0; i < 100; i+=3) {
-         
-         console.log(i);
-     }
-     
+    // let newarray = [];
+    //  for (let i = 0; i < 100; i+=3) {
+    //      newarray.push(i)
+    //  };
+    //  console.log(newarray);
      
 //  3. Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним.
+    // let newarray = [];
+    //     for (let i = 0; i < 100; i+=3) {
+    //         if (i % 2 == 0 ) newarray.push(i);
+    //         console.log(newarray[i])
+    //     };
 //  4. Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним та записати їх в новий масив
 //  5. Вивести кожен елемент масиву, сусід справа якого є парним
 //   EXAMPLE: [ 1, 2, 3, 5, 7, 9, 56, 8, 67 ] -> Має бути виведено 1, 9, 56
@@ -313,4 +317,35 @@
 // - Відтворити роботу годинника, відрахувавши 2 хвилини (2 цикли! 1й - хвилини, 2й - секунди)
 // - Відтворити роботу годинника, відрахувавши  2 години  (3 цикли! 1й - години, 2й - хвилини, 3й - секунди)
 
- 
+function setup() {
+    createCanvas(400, 400);
+  }
+  
+  function draw() {
+    background(220);
+  
+    // вхідні точки кривої
+    let points = [[50, 100], [200, 300], [350, 100]];
+  
+    // побудова контрольних точок кривої
+    noFill();
+    stroke(0);
+    strokeWeight(1);
+    beginShape();
+    for (let i = 0; i < points.length; i++) {
+      vertex(points[i][0], points[i][1]);
+    }
+    endShape();
+  
+    // побудова кривої Безьє
+    noFill();
+    stroke(255, 0, 0);
+    strokeWeight(3);
+    beginShape();
+    for (let t = 0; t <= 1; t += 0.01) {
+      let x = bezierPoint(points[0][0], points[1][0], points[2][0], t);
+      let y = bezierPoint(points[0][1], points[1][1], points[2][1], t);
+      vertex(x, y);
+    }
+    endShape();
+  }
